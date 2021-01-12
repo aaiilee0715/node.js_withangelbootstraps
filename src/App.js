@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, NavDropdown, Form, Nav, Button, Carousel, FormControl, Container, Row, Col, ListGroup } from 'react-bootstrap';
-import C from './images/C.jpg'
+import SALMON from './images/SALMON.jpg'
 import COFFEE from './images/COFFEE.jpg'
 import DRINKS from './images/DRINKS.jpg'
 function Bar() {
@@ -32,10 +32,10 @@ function Caro() {
   return (
     <Carousel>
       <Carousel.Item>
-        <div className="d-flex justify-content center">
+        <div className="d-flex justify-content-center">
           <img
             width="75%"
-            src={C}
+            src={SALMON}
             alt="First slide"
           />
         </div>
@@ -45,22 +45,26 @@ function Caro() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          src={COFFEE}
-          alt="Third slide"
-        />
-
+        <div className="d-flex justify-content-center">
+          <img
+           width="75%"
+            src={COFFEE}
+            alt="Third slide"
+          />
+        </div>
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          src={DRINKS}
-          alt="Third slide"
-        />
-
+        <div className="d-flex justify-content-center">
+          <img
+           width="75%"
+            src={DRINKS}
+            alt="Third slide"
+          />
+        </div>
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -127,8 +131,11 @@ function App() {
   return (
     <>
       <Bar />
+      <hr></hr>
       <Caro />
+      <hr></hr>
       <Btn />
+      <hr></hr>
       <LiGroup />
     </>
   );
